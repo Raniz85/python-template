@@ -22,14 +22,14 @@ init:
 	poetry install
 
 lint:
-	poetry run flake8
+	poetry run flake8 src/ tests/
 
 stylecheck:
-	poetry run black --check src/
+	poetry run black --check src/ tests/
 
 format:
-	poetry run black src/ 
-	poetry run isort src/
+	poetry run black src/ tests/
+	poetry run isort src/ tests/
  
 typecheck:
 	poetry run mypy src/
