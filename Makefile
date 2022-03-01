@@ -35,6 +35,6 @@ typecheck:
 	MYPYPATH="src/" poetry run mypy --namespace-packages --explicit-package-bases src/
 
 test:
-	poetry run pytest --cov --cov-branch --cov-report term-missing
+	PYTHONPATH="src/" poetry run pytest --cov --cov-branch --cov-report term-missing
 
 ci: stylecheck lint typecheck test
