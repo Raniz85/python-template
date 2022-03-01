@@ -32,7 +32,7 @@ format:
 	poetry run isort src/ tests/
  
 typecheck:
-	poetry run mypy src/
+	MYPYPATH="src/" poetry run mypy --namespace-packages --explicit-package-bases src/
 
 test:
 	poetry run pytest --cov --cov-branch --cov-report term-missing
