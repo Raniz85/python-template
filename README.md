@@ -51,8 +51,28 @@ a lot of powerful features for testing.
 execute.  The Makefile contains targets for each tooling as well as an _init_ target for initialising the project and a
 _ci_ target suitable for running in a CI pipeline.
 
-# Init
+### Init
 `make init` installs all projects using poetry
+
+### Format
+`make format` runs Black and isort on _src/_ and _tests/_ to reformat all files and order imports.
+
+### Lint
+`make lint` runs flake8 on _src/_ and _tests/_ and reports any linting errors, fails if there are any linting errors and
+succeeds otherwise.
+
+### Stylecheck
+`make stylecheck` runs Black in check mode, reporting any changes that would be made instead of making them. Fails if any
+change would be made and succeeds if no changes would be made
+
+### Typecheck
+`make typecheck` runs mypy on _src/_ and reports any type errors, fails if there is any type errors and succeeds otherwise.
+
+### Test
+`make test` runs all tests in _tests/_ using PyTest, fails if there is any test failures and suceeds otherwise.
+
+### CI
+`make ci` is a meta target that depends on stylecheck, lint, typecheck and test and fails if any of those targets fails.
 
 # CI
 The templates comes pre-baked with CI support for both GitLab and GitHub. It contains one job that runs on pull requests
