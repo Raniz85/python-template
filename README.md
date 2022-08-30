@@ -1,6 +1,10 @@
 # Python Project Template
 A nice starting point for a modern python project.
 
+# Licensing
+This template is licensed under the [MIT-0](https://github.com/aws/mit-0) license, meaning you're basically free to do
+whatever you want with it.
+
 # Requirements
 ## Python
 You need to have Python 3 installed (obviously), the exact version is configurable in _pyproject.toml_ but defaults to
