@@ -25,18 +25,8 @@ to install that instead.
 ## Poetry
 [Poetry](https://python-poetry.org/) is a packaging and dependency manager for Python.
 
-## Flake8
-[Flake8](https://flake8.pycqa.org/en/latest/) is a linting tool for Python with a bunch of handy plugins.
-
-### Bandit
-[Bandit](https://github.com/PyCQA/bandit) Is a code analysis tool for Python for catching security errors.
-
-### BugBear
-[BugBear](https://github.com/PyCQA/flake8-bugbear) Is a code analysis tool for finding bugs and design problems.
-
-### DocStrings
-[DocStrings](https://gitlab.com/pycqa/flake8-docstrings) Is a Flake 8 plugin to assert that docstrings are correct
-and prevalent throughout the codebase.
+# Ruff
+[Ruff](https://github.com/astral-sh/ruff) is an extremely fast Python linter written in Rust.
 
 ## Black
 [Black](https://github.com/psf/black) is an uncompromising code formatter for Python. It's designed to format
