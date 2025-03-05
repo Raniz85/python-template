@@ -1,3 +1,6 @@
+# Archived
+This repository will likely become stale as future development will take place at https://codeberg.org/Raniz/python-template
+
 # Python Project Template
 A nice starting point for a modern python project.
 
